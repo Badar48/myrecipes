@@ -1,25 +1,246 @@
-<h1>Welcome To MyRecipes App</h1>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
+<div class="row bg-white  px-0 w-100 m-0">
+	<div class="col-md-12 px-0">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		  </ol>
+			<div class="carousel-inner" >
+			    <div class="carousel-item active" data-interval="5000">
+			    	<div class="desktop d-md-block d-none">
+				      <%= image_tag"slider1.png", class: "d-md-block d-none w-100"%>
+				      	<div class="d-flex  carousel-caption  h-100 w-58 align-items-center ">
+				      		<div class="col w-58">
+				                <h1 class="freshtext">Fresh & Hot</h1>
+				                <h3 class=" anmi">Free Delivery By Lahori Deria On Your First Order</h3>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+				                <button type="button" class="btn btnborder  btn-outline-light px-5 py-3 mt-4 mb-4 ">ORDER NOW</button>
+				                <h3 class="callus text-warning"> Call us : 044-4367748748</h3>
+		                	</div>
+		            	</div>
+		            </div>
+	            <div class="mobile d-md-none d-block w-100">
+	            	<%= image_tag"slider2.png", class: "d-md-none d-block w-100 h-608"%>
+				    <div class="d-flex  carousel-caption  h-100 w-100 m-0 align-items-center ">
+				      	<div class="col w-100">
+			                <h1 class="freshtextmob">Fresh & Hot</h1>
+			                <h5 class=" anmi" >Free Delivery By Lahori Deria On Your First Order</h5>
+			                <button type="button" class="btn btnborder  btn-outline-light px-5 py-3 mt-4 mb-4">ORDER NOW</button>
+			                <h3 class="callus text-warning"> Call us : 044-4367748748</h3>
+			                <img class="leave"src="/assets/leave">
+			                 <img class="leaver"src="/assets/potato">
+			                 <img class="leaver1"src="/assets/smallleav.png">
+		                </div>
+		            </div>
+			    </div>
+			</div>
+
+			<!-- Extra code partial -->
+		    <div class="carousel-item" data-interval="5000">
+		    	 	<div class="desktop d-md-block d-none">
+				       <%= image_tag"slider1.png", class: "d-md-block d-none w-100"%>
+				      	<div class="d-flex  carousel-caption  h-100 w-58 align-items-center ">
+				      		<div class="col w-58">
+				                <h1 class="freshtext">Fresh & Hot</h1>
+				                <h3 class=" anmi">Free Delivery By Lahori Deria On Your First Order</h3>
+				                <button type="button" class="btn btnborder  btn-outline-light px-5 py-3 mt-4 mb-4 ">ORDER NOW</button>
+				                <h3 class="callus text-warning"> Call us : 044-4367748748</h3>
+		                	</div>
+		            	</div>
+		            </div>
+	            <div class="mobile d-md-none d-block">
+	            	<%= image_tag"slider2.png", class: "d-md-none d-block w-100 h-608"%>
+				    <div class="d-flex  carousel-caption  h-100 w-100 m-0 align-items-center ">
+				      	<div class="col w-100">
+			                <h1 class="freshtextmob">Fresh & Hot</h1>
+			                <h5 class=" anmi" style="animation-delay: 2s">Free Delivery  On Your First Order</h5>
+			                <button type="button" class="btn btnborder  btn-outline-light px-5 py-3 mt-4 mb-4 ">ORDER NOW</button>
+			                <h3 class="callus text-warning"> Call us : 044-4367748748</h3>
+			                <img class="leave"src="/assets/leave">
+			                 <img class="leaver"src="/assets/potato">
+			                 <img class="leaver1"src="/assets/smallleav.png">
+		                </div>
+		            </div>
+			    </div>
+		    </div>
+		    <!-- Extra code partial -->
+
+		    </div>
+		  <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only d-md-block d-non">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only d-md-block d-non">Next</span>
+		  </a>
+		</div>
+	</div>
 </div>
+<!-- slider completed -->
+<div class=" bg-white pt-5 mx-md-5 pb-5 mb-5">
+	<div class="bgbox row  w-85 mx-auto">
+		<div class="col-md-4 text-center p-5">
+			<%= image_tag"icon1.png", class: "iconani"%>
+			<h3 class="icon1con font-weight-bold">Choose</h3>
+			<p class="m-1 text-muted">Browse hundreds of menus to find the food you like</p>
+		</div>
+		<div class="col-md-4 text-center p-5">
+			<%= image_tag"icon1.png", class: "iconani"%>
+			<h3 class="icon1con font-weight-bold">Pay</h3>
+			<p class="m-1 text-muted">Pay fast & secure online or on delivery</p>
+		</div>
+		<div class="col-md-4 text-center p-5">
+			<%= image_tag"icon1.png", class: "iconani"%>
+			<h3 class="icon1con  font-weight-bold">Enjoy</h3>
+			<p class="m-1 text-muted">Food is prepared & delivered to your door</p>
+		</div>
+	</div>
+	<div class="flex-column">
+		<div class="row mt-5 no-gutters position-relative ">
+			<div class="col-md-6 text-center">
+				<%= image_tag"foodbox.jpg", class: "fodbox w-85"%>
+			</div>
+			<div class="col-md-6 pt-5 px-4">
+				<div>
+					<h5 class="offer mb-0">WE OFFER</h5>
+				</div>
+				<div >
+					<h1 class="freed font-weight-bold mt-0">Free <span> Delivery!</span></h1>
+				</div>
+				<div class="w-72 ">
+					<h6 class="para text-muted">Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn nuts salsify bunya pie sprout coriander water.</h6>
+				</div>
+				<button type="button" class="btn btnborder  btn-success px-md-5 px-2 py-3 mt-5 w-51  mb-4 ">ORDER NOW : 44-5678904645</button>
+			</div>
+			<%= image_tag("bigleave.png", class: " bigleave d-md-block d-none" )%>
+		</div>
+		<div class="row no-gutters justify-content-center ">
+			<%= image_tag("bar.png", class: "mt-3 mb-4 d-md-block d-none " )%>
+			<%= image_tag("barmob.png", class: "mt-3 d-md-none d-block w-316 " )%>
+		</div>
+	</div>
+	<div class="row no-gutters justify-content-center mt-5">
+		<div class="text-center w-100 mt-3 mb-3" >
+			<h6 class="taste">TASTY & CRUNCHY</h6>
+			<h1 class="enjoy font-weight-bold">Choose & enjoy</h1>
+			<h5 class="inspire text-muted">Inspired by recipes and creations of world’s best chefs</h4>
+		</div>
+		<div class="mt-md-5 mt-4 row px-5 mb-5">
+			<div class="col-md-3 text-center mt-md-0 ">
+				<%= image_tag("fruit1", class: " w-65 zoom" )%>
+				<h5 class="appe">Gorgeous appetizers</h5>
+				<p class="px-3 text-muted">Beetroot water spinach okra water chestnut ricebean pea.</p>
+				<a href="#" class="border-bottom viewfull font-weight-bold">VIEW FULL MENU</a>
+			</div>
+			<div class="col-md-3 text-center mt-4 mt-md-0">
+				<%= image_tag("fruit2", class: " w-65 zoom" )%>
+				<h5 class="appe">Reinvented vegan meals</h5>
+				<p class="px-3 text-muted">Water spinach arugula pea tatsoi aubergine spring onion.</p>
+				<a href="#" class="border-bottom viewfull font-weight-bold">VIEW FULL MENU</a>
+			</div>
+			<div class="col-md-3 text-center mt-4 mt-md-0">
+				<%= image_tag("fruit3", class: "  zoom w-65" )%>
+				<h5 class="appe">Beatifull pasta</h5>
+				<p class="px-3 text-muted">Dandelion zucchini burdock yarrow chickpea dandelion.</p>
+				<a href="#" class="border-bottom viewfull font-weight-bold">VIEW FULL MENU</a>
+			</div>
+			<div class="col-md-3 text-center mt-4 mt-md-0">
+				<%= image_tag("fruit4", class: " w-65 zoom" )%>
+				<h5 class="appe">Gluten free meals</h5>
+				<p class="px-3 text-muted">Chickweed okra pea winter purslane coriander yarrow.</p>
+				<a href="#" class="border-bottom viewfull font-weight-bold">VIEW FULL MENU</a>
+			</div>
+		</div>
+	</div>
+	<div class="row no-gutters justify-content-center">
+		<div class="text-center">
+			<h1 class="hot">hot today!</h1>
+			<h5 class="text-muted para">The minutes that usually takes to deliver!</h5>
+			<%= image_tag("line.png", class: " " )%>
+		</div>
+	</div>
+	<div class="row no-gutter mt-5">
+		<div class="col-md-3 text-center">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal1.jpg", class: " w-268 mb-3" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal2.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal3.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal4.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+	</div>
+	<div class="row no-gutter mt-md-5">
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal5.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal6.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal7.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+		<div class="col-md-3 text-center mt-5 mt-md-0">
+			<div class="pb-3 mx-4 border roundborder">
+				<%= image_tag("deal8.jpg", class: " mb-3 w-268" )%>
+				<h5>Attribute Variation</h5>
+				<%= image_tag("star.png", class: " " )%>
+				<p class="text-muted zoomer mt-2">$2.35-$5.23</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row  position-relative ">
+	<%= image_tag("yelbar.png", class: " w-100" )%>
+	<%= image_tag("foodfooter.png", class: "footer d-md-block d-none " )%>
+	<%= image_tag("food2foter.png", class: "footerpiza w-26 " )%>
+	<div class="col-12  text-center bg-yellow  pt-2">
+		<h1 class="fotertext ">Lets Order Your Favourite Dish</h1>
+		<h1 class="fotertext text-white" >Call Us</h1>
+		<a href="#" class="btn btn-danger px-5 py-4 font-weight-bold mt-4 mb-4">044-63467236326</a>
+		<h4 class="email mb-5">LahoriDera@gmail.com</h4>
+	</div>
+</div>
+	
+

@@ -1,0 +1,352 @@
+@import "bootstrap/scss/bootstrap";
+body{
+	background-image: asset-url("bgfood.png");
+	font-family: "ibmbold";
+	background-size: cover;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.bgbox{
+	background-image: asset-url("bg-iconbox.png");
+	background-size: cover;
+}
+
+@font-face{
+	font-family: "FuturaPT";
+	src:url('/assets/IBMPlexSans-Thin');
+	
+	font-family: "Sansthin";
+	src:url('/assets/SourceSansPro-ExtraLight');
+	font-family: "Sansregular";
+	src:url('/assets/SourceSansPro-Regular');
+	
+	font-family: "ibm";
+	src:url('/assets/IBMPlexSans-Regular');
+	font-family: "ibmbold";
+	src:url('/assets/IBMPlexSans-Medium');
+
+}
+@font-face {
+	font-family: "thiner";
+	src:url('/assets/IBMPlexSans-Thin');
+	font-family: "Sanslight";
+	src:url('/assets/SourceSansPro-Light');
+}
+@font-face{
+	font-family: "yummy";
+	src:url('/assets/LondrinaSolid-Regular');
+}
+/*Animated Search Bar*/
+.search input {
+	outline: none;
+}
+
+.search input[type=search] {
+	background:  url(blackzoom.png) no-repeat  center;
+	padding: 0px 15px 0px 32px;
+	width: 10px;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+	border:none;
+	background-color: transparent !important;
+	background-size: 24px;
+	color:black;
+}
+.search input[type=search]:focus {
+	width: 130px;
+	background-color: none !important;
+	border-bottom: 1px solid black;
+	padding-left: 0px;
+	background:none;
+}
+
+.search input:-moz-placeholder {
+	color: white !important;
+}
+.search input::-webkit-input-placeholder {
+	color: white !important;
+}
+/*Animated Search Bar*/
+
+.navfamliy{
+	font-family: "ibmbold";
+	font-size: 15px;
+}
+.navbar-nav .dropdown-menu{
+	background-color: #ffff;
+	border:none;
+	width: 14rem;
+	border-top: 3px solid red;
+	font-family: "thiner";
+	color:#9a9596!important;
+	font-size: 14px;
+
+}
+.dropdown-item:hover, .dropdown-item:focus{
+	background-color: #dcdcdca1 !important;
+}
+.w-18{
+	width: 112px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+	width: 30px !important;
+	height: 30px !important;
+}
+.carousel-control-prev, .carousel-control-next{
+	width: 6% !important;
+}
+.freshtext{
+	font-size: 6rem !important;
+	color: rgb(255, 204, 0)!important;
+	font-family: "yummy";
+	  animation: myfirst 2s linear 2s infinite alternate;
+	  position: relative;
+}
+.freshtextmob{
+	font-size: 4rem !important;
+	color: rgb(255, 204, 0)!important;
+	font-family: "yummy";
+	animation: myfirst 2s linear 1s infinite alternate;
+	position: relative;
+
+}
+.callus{
+	color: rgb(255, 204, 0)!important;
+}
+.carousel-caption{
+	left: 0% !important;
+	z-index: 1 !important;
+}
+.w-58{
+	width: 58% !important;
+}
+.btnborder{
+	border: 2px solid white ! important;
+	border-radius: 2rem !important;
+}
+
+.btnborder:hover{
+	position: relative;
+  	animation: icon 1s linear  infinite alternate;
+}
+
+.h-608{
+	height: 608px;
+
+}
+.leave{
+	position: absolute;
+	width: 20%;
+	top:-133px;
+	left: 44px;
+
+}
+.anmi{
+	  position: relative;
+  animation: bounce 1s linear 1s infinite alternate;
+}
+@keyframes myfirst {
+  0%   { right:0px; top:0px;}
+ 
+  100% { right:25px; top:0px;}
+}
+@keyframes bounce {
+0%   { left:0px; top:0px;}
+ 
+  100% { left:0px; top:10px;}
+}
+@keyframes icon {
+  0%   { left:0px; top:0px;}
+ 
+  100% { left:10px; top:10px; right:10px;}
+}
+.leaver{
+	position: absolute;
+	width: 15%;
+	top:-67px;
+	left: 183px;
+}
+.leaver1{
+	position: absolute;
+	width: 15%;
+	bottom:-107px;
+	left: 142px;
+}
+.icon1con{
+	font-size: 20px !important;
+	color: #cc3528 !important;
+	
+}
+.w-85{
+	width: 85% !important;
+}
+.iconani:hover{
+	position: relative;
+  	animation: icon 1s linear  infinite alternate;
+}
+.freed{
+	font-family: "ibmbold";
+	font-size: 4rem;
+	color: rgb(255, 204, 0)!important;
+}
+.freed span{
+	color: #28a745 !important;
+}
+.offer{
+	color: rgb(255, 204, 0)!important;
+}
+.w-72{
+	width: 72% !important;
+
+}
+.para{
+	line-height: 1.6;
+	font-size: 18px ! important;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+
+}
+.bigleave{
+	position: absolute;
+	right: 0px;
+	bottom: -85px;
+}
+.w-51{
+	width: 56% !important;
+}
+.w-316{
+	width: 316px;
+}
+.taste{
+	letter-spacing: 2px;
+	color: #8dc63f;
+}
+.enjoy{
+	font-size: 4rem;
+	letter-spacing: 2px;
+}
+.inspire{
+	letter-spacing: 2px;
+	font-family: "Sanslight"!important;
+}
+.w-65{
+	width: 65%;
+}
+.appe{
+	font-weight: 400;
+}
+.viewfull{
+	color: black !important;
+	font-size: 12px;
+}
+.zoom:hover {
+  -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
+    transition: transform .2s;
+}
+.hot{
+	font-size: 3rem;
+	color: rgb(255, 204, 0)!important;
+	font-family: "yummy";
+	animation: myfirst 2s linear 2s infinite alternate;
+	position: relative;
+}
+
+.w-268{
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.roundborder{
+	border-radius:5px;
+}
+.zoomer:hover{
+ -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+   transition: transform .1s;
+   color: #ffbe00!important;
+}
+.bg-yellow{
+	background-color: #ffcc00;
+}
+.footer{
+	position: absolute;
+	top:-70px;
+	z-index: 2;
+}
+.fotertext{
+	font-family: "yummy";
+	font-size: 3.5rem;
+	color: #ea450f !important;
+}
+.email{
+	font-family: "ibmbold";
+	color: #ea450f !important;
+}
+.footerpiza{
+	position: absolute;
+	top:-96px;
+	right: 0px;
+	z-index: 2;
+}
+.w-26{
+	width: 25%;
+}
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (max-width: 600px) {
+	 .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none !important;
+  }
+  .w-72{
+  	width: 100% !important;
+  }
+  .w-51{
+  	width: 100% !important;
+  }
+
+	.leave{
+		top:-110px;
+	}
+	.callus{
+		font-size: 24px;
+	}
+	.w-18{
+		width: 100px;
+	}
+	.viewfull{
+		font-size: 14px;
+	}
+	.enjoy{
+		font-size: 3rem;
+	}
+	body {
+		background-image: none;
+	}
+	.w-316{
+		width: 290px;
+	}
+	.zoomer{
+		font-size: 23px;
+	}
+	.fotertext{
+		font-size: 2.5rem;
+	}
+	.bg-yellow{
+		height: 45rem;
+	}
+	.footerpiza{
+	position: absolute;
+	top:249px;
+	right: 0px;
+	z-index: 2;
+	}
+	.w-26{
+		width: 95%;
+	}
+	}
+
