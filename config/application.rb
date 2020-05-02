@@ -16,6 +16,6 @@ module Myrecipes
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.assets.enabled =true
-    config.assets.paths << Rails.root.join('/app/assets/font')
+    config.assets.paths << Rails.root.join('/app/assets/fonts')
   end
 end

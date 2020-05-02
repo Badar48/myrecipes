@@ -11,35 +11,10 @@ body{
 	background-size: cover;
 }
 
-@font-face{
-	font-family: "FuturaPT";
-	src:asset-url('/assets/IBMPlexSans-Thin');
-	
-	font-family: "Sansthin";
-	src:asset-url('/assets/SourceSansPro-ExtraLight');
-	font-family: "Sansregular";
-	src:asset-url('/assets/SourceSansPro-Regular');
-	
-	font-family: "ibm";
-	src:url('/assets/IBMPlexSans-Regular');
-	
 
-}
-@font-face{
-	font-family: "ibmbold";
-	src:asset-url('/assets/IBMPlexSans-Medium');
-}
-@font-face{
-	font-family: "thiner";
-	src:asset-url('/assets/IBMPlexSans-Thin');
-}
 @font-face {
-	font-family: "Sanslight";
-	src:asset-url('/assets/SourceSansPro-Light');
-}
-@font-face{
-	font-family: "yummy";
-	src:asset-url('/assets/LondrinaSolid-Regular');
+	font-family: 'yummy';
+	src:font-url('LondrinaSolid-Regular.ttf') format('truetype');
 }
 /*Animated Search Bar*/
 .search input {
