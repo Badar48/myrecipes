@@ -11,6 +11,32 @@ body{
 	background-size: cover;
 }
 
+@font-face{
+	font-family: "FuturaPT";
+	src:asset-url('/assets/IBMPlexSans-Thin');
+	
+	font-family: "Sansthin";
+	src:asset-url('/assets/SourceSansPro-ExtraLight');
+	font-family: "Sansregular";
+	src:asset-url('/assets/SourceSansPro-Regular');
+	
+	font-family: "ibm";
+	src:asseturl('/assets/IBMPlexSans-Regular');
+	
+
+}
+@font-face{
+	font-family: "ibmbold";
+	src:font-url('IBMPlexSans-Medium.ttf') format('truetype');
+}
+@font-face{
+	font-family: "thiner";
+	src:font-url('IBMPlexSans-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: "Sanslight";
+	src:font-url('SourceSansPro-Light.ttf') format('truetype');
+}
 
 @font-face {
 	font-family: 'yummy';
