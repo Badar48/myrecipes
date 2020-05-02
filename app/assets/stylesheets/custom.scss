@@ -48,7 +48,7 @@ body{
 }
 
 .search input[type=search] {
-	background:  url(blackzoom.png) no-repeat  center;
+	background: asset-url(blackzoom.png) no-repeat  center;
 	padding: 0px 15px 0px 32px;
 	width: 10px;
 	-webkit-transition: all 0.6s ease;
