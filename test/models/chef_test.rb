@@ -4,6 +4,7 @@ class ChefTest < ActiveSupport::TestCase
   
   def setup
     @chef = Chef.new(chefname: "mashrur", email: "mashrur@example.com")
+    
   end
 
     test "should be valid" do
@@ -19,7 +20,7 @@ class ChefTest < ActiveSupport::TestCase
     @chef.chefname = "a" * 31
     assert_not @chef.valid?
   end
-   test "email should be present" do
+   test "email should be present" do  
     @chef.email = " "
     assert_not @chef.valid?
   end
