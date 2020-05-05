@@ -12,41 +12,33 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Home</a>
                         <div class="dropdown-menu py-4 mx-4 text-dark " >
-                            <a href="#" class="dropdown-item ">Inbox</a>
-                            <a href="#" class="dropdown-item ">Sent</a>
-                            <a href="#" class="dropdown-item ">Drafts</a>
+                            <a href="<%= root_path%>" class="dropdown-item ">Home</a>
+                            <a href="<%= root_path%>" class="dropdown-item ">Home</a>
+                            <a href="<%= root_path%>" class="dropdown-item ">Home</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Shop</a>
+                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Deals</a>
                         <div class="dropdown-menu py-4 mx-4 text-dark">
-                            <a href="#" class="dropdown-item ">Inbox</a>
-                            <a href="#" class="dropdown-item ">Sent</a>
-                            <a href="#" class="dropdown-item ">Drafts</a>
+                            <a href="<%= recipes_path%>" class="dropdown-item ">Deals Page</a>
+                            <a href="<%= recipes_path%>" class="dropdown-item ">Deals Page</a>
+                            <a href="<%= recipes_path%>" class="dropdown-item ">Deals Page</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Products</a>
+                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Gallery</a>
                         <div class="dropdown-menu py-4 mx-4 text-dark">
-                            <a href="#" class="dropdown-item ">Inbox</a>
-                            <a href="#" class="dropdown-item ">Sent</a>
-                            <a href="#" class="dropdown-item ">Drafts</a>
+                            <a href="<%=pages_gallery_path%>" class="dropdown-item ">Pictures</a>
+                            <a href="<%=pages_gallery_path%>" class="dropdown-item ">Pictures</a>
+                            <a href="<%=pages_gallery_path%>" class="dropdown-item ">Pictures</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu py-4 mx-4 text-dark ">
-                            <a href="#" class="dropdown-item ">Inbox</a>
-                            <a href="#" class="dropdown-item ">Sent</a>
-                            <a href="#" class="dropdown-item ">Drafts</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-dark mx-2" data-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu py-4 mx-4 text-dark">
-                            <a href="#" class="dropdown-item ">Inbox</a>
-                            <a href="#" class="dropdown-item ">Sent</a>
-                            <a href="#" class="dropdown-item ">Drafts</a>
+                            <a href="<%=pages_about_path%>" class="dropdown-item ">About Us</a>
+                            <a href="<%=pages_about_path%>" class="dropdown-item ">About Us</a>
+                            <a href="<%=pages_about_path%>" class="dropdown-item ">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -54,8 +46,7 @@
                     <input type="search" placeholder="">
                 </form>
                 <div class="navbar-nav ">
-                    <a href="#" class="nav-item nav-link mx-3 text-dark">Sign In</a>
-                    <a href="#" class="nav-item nav-link mx-3 text-dark">Login</a>
+                    <a href="<%=new_recipe_path %>" class="nav-item nav-link mx-3 text-dark ">Sign In</a>
                 </div>
             </div>
         </nav>
