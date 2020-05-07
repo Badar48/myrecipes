@@ -1,3 +1,27 @@
+
+<div class="bg-white">
+	<h1 align="center">Listing all recipes</h1>
+	<hr class="mb-0">
+	<% @recipes.each do |recipe| %>
+	  <div class="row">
+	    <div class="col-md-2">
+	      <section class="center">
+	        
+	      </section>
+	    </div>
+	    <div class="col-md-8 bg-light py-4 px-5 rounded border mt-5">
+	      <h4><%= recipe.name %></h4>
+	      <p><%= truncate(recipe.description, length: 150) %></p>
+	      <p>
+	        <span class="quiet"><small>Created 
+	        <%= time_ago_in_words(recipe.created_at) %> ago</small></span>
+	      </p> 
+	    </div>
+	  </div>
+	<%end%>
+</div>
+
+
 <div class="row bg-white  px-0 w-100 m-0 mb-5">
 	<div class="col-md-12 px-0">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -63,9 +87,8 @@
 		            </div>
 			    </div> 
 		    </div>
-		    <!-- Extra code partial -->
-
 		    </div>
+		 <!-- Extra code partial -->
 		  <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only d-md-block d-non">Previous</span>
@@ -76,10 +99,12 @@
 		  </a>
 		</div>
 	</div>
+	<!-- slider completed -->
+
+	<!-- deals pack -->
 	<div class="row justify-content-center w-100 my-4 no-gutters">
 		<h1 class="hot">Top Deals For You!</h1>
 	</div>
-
 	<div class="row no-gutter mt-md-5 mt-2">
 		<div class="col-md-3 text-center">
 			<div class="pb-3 mx-4 border roundborder">
@@ -351,4 +376,5 @@
 		</div>
 	</div>
 </div>
-<%= render 'layouts/footer' %>
+<!-- deals pak -->
+<%= render 'layouts/footer' %> 

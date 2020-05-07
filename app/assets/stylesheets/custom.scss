@@ -93,7 +93,7 @@ body{
 	background-color: #dcdcdca1 !important;
 }
 .w-18{
-	width: 112px;
+	width: 150px;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
 	width: 30px !important;
@@ -512,7 +512,10 @@ z-index: 1;
 .h-480{
 	height: 480px;
 }
-
+.h-265{
+	height: 265px;
+	width: 265px !important;
+}
 
 
 
@@ -540,7 +543,9 @@ z-index: 1;
 		font-size: 24px;
 	}
 	.w-18{
-		width: 100px;
+		width: 126px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.viewfull{
 		font-size: 14px;
@@ -582,6 +587,9 @@ z-index: 1;
 	}
 	.bike{
 		bottom: -30px !important;
+	}
+	.h-265{
+		width: 100% !important;
 	}
 
 }
