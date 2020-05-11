@@ -1,17 +1,21 @@
-<div class="bg-white">
-<h1 align="center">Recipe Name: <%= @recipe.name.capitalize %></h1>
-
-<div class="well col-md-8  bg-light py-4 px-5 rounded border mt-5">
+<div class="bg-white pb-5">
+<%= render 'shared/page_title', title: @recipe.name %>
+<div class="well col-md-8 py-4 px-5 rounded border bg-light h-368 mt-5 mx-auto ">
   <h4 class="center description"><strong>Description: </strong></h4>
   <hr />
-  <%= @recipe.description %>
+ <%= simple_format(@recipe.description) %>
   <hr />
+  <div class="pull-right">
     <p class="center">
-      Created by:
+      <em>Created by:</em>
     </p>
-    <p>
-      <small><%= @recipe.chef.chefname %></small>
-        <%= time_ago_in_words(@recipe.created_at) %> ago
+    <p class="center">
+      <%= link_to gravatar_for(@recipe.chef), recipes_path %>
     </p>
+    <p class="center">
+      <small><%= @recipe.chef.chefname.capitalize %></small>
+      <div class="pull-right"><%= time_ago_in_words(@recipe.created_at) %> ago</div>
+    </p>
+  </div>
 </div>
 </div>
